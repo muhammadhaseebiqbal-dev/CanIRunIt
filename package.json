@@ -1,0 +1,73 @@
+{
+  "name": "pc-game-scout",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PC Game Scout - Windows Hardware Scanner & 5,000+ Game Compatibility Engine with Real-World Community & iGPU Feasibility",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "canirunit": "dist/index.js",
+    "pc-game-scout": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "data/games_database.min.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run build",
+    "test": "node dist/index.js check \"Portal 2\"",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.tsx",
+    "fetch-data": "python scripts/fetch_datasets.py && python scripts/build_curated_game_library.py",
+    "verify-data": "python scripts/verify_library.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhaseeb/pc-game-scout.git"
+  },
+  "keywords": [
+    "can-i-run-it",
+    "canirunit",
+    "pc-game-scout",
+    "game-scout",
+    "gaming",
+    "hardware",
+    "igpu",
+    "lowspecgamer",
+    "benchmarks",
+    "cli",
+    "ink",
+    "systeminformation",
+    "pc-gaming",
+    "fps-estimator"
+  ],
+  "author": "Muhammad Haseeb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhaseeb/pc-game-scout/issues"
+  },
+  "homepage": "https://github.com/mhaseeb/pc-game-scout#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cli-spinners": "^2.9.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "ink": "^4.4.1",
+    "react": "^18.3.1",
+    "systeminformation": "^5.25.11",
+    "terminal-link": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.5.4"
+  }
+}

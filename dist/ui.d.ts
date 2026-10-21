@@ -1,0 +1,14 @@
+import chalk from 'chalk';
+import { GameCompatibility, HardwareProfile, PerformanceTier } from './types.js';
+export declare function terminalLink(text: string, url: string): string;
+export declare function stripAnsi(str: string): string;
+export declare function visibleWidth(str: string): number;
+export declare function getTerminalWidth(): number;
+export declare function renderGaugeBar(current: number, max?: number, width?: number): string;
+export declare function formatTierBadge(tier: PerformanceTier): string;
+export declare function formatBoxRow(content: string, cardWidth: number, borderFn?: chalk.Chalk): string;
+export declare function wrapTextToWidth(text: string, maxWidth: number): string[];
+export declare function printHardwareBanner(hw: HardwareProfile): void;
+export declare function renderGamesTable(results: GameCompatibility[]): void;
+export declare function renderGameCard(r: GameCompatibility, hw: HardwareProfile): void;
+export declare function printSummaryCard(summary: any, hw: HardwareProfile): void;
