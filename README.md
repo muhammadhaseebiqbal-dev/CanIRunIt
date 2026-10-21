@@ -4,6 +4,20 @@
 
 ---
 
+<p align="center">
+  <img src="assets/terminal_dashboard.png" alt="PC Game Scout Interactive Terminal Dashboard" width="850">
+  <br>
+  <em>Interactive TUI Dashboard: Live hardware scanning, responsive layout, filter tabs, and real-world iGPU feasibility</em>
+</p>
+
+<p align="center">
+  <img src="assets/terminal_scorecard.png" alt="PC Game Scout Detailed Compatibility Scorecard" width="850">
+  <br>
+  <em>Detailed Game Scorecard: Hardware component checklist, r/lowspecgamer community wisdom, bottleneck analysis & store links</em>
+</p>
+
+---
+
 ## 🌟 Key Features
 
 1. **Deep Windows Hardware Diagnostics**:

@@ -47,6 +47,9 @@
   ],
   "author": "Muhammad Haseeb",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/mhaseeb/pc-game-scout/issues"
   },
